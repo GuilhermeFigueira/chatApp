@@ -3,7 +3,7 @@ import Message from "./Message";
 export default function MessagesList() {
 	const lastMessage =
 		document.querySelector("#allMessages")?.lastElementChild!;
-	lastMessage.scrollIntoView();
+	lastMessage?.scrollIntoView();
 
 	return (
 		<div id="messageList" className="font-inter overflow-y-scroll pb-6">
