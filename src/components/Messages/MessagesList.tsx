@@ -2,7 +2,7 @@ import Message from "./Message";
 
 export default function MessagesList() {
 	const lastMessage =
-		document.querySelector("#allMessages")?.lastElementChild!;
+		document.querySelector("#allMessages")?.lastElementChild;
 	lastMessage?.scrollIntoView();
 
 	return (
@@ -24,11 +24,38 @@ export default function MessagesList() {
 					userSent={"Guilherme"}
 					receivedMessage={true}
 				>
-					seu tioseu tioseu tioseu tioseu tioseu tioseu tioseu tioseu
-					tioseu tioseu tio
+					🅰️🅱️😃
 				</Message>
 				<Message messageTime={"11:32"} userSent={"Você"}>
-					affffffffffffffffffffffffffffffffffffff
+					não entendi
+				</Message>
+				<Message
+					messageTime={"11:32"}
+					userSent={"Guilherme"}
+					receivedMessage={true}
+				>
+					probrema e teu lol
+				</Message>
+				<Message messageTime={"11:32"} userSent={"Você"}>
+					bazinga
+				</Message>
+				<Message messageTime={"11:32"} userSent={"Você"}>
+					bazinga
+				</Message>
+				<Message messageTime={"11:32"} userSent={"Você"}>
+					bazinga
+				</Message>
+				<Message messageTime={"11:32"} userSent={"Você"}>
+					bazinga
+				</Message>
+				<Message messageTime={"11:32"} userSent={"Você"}>
+					bazinga
+				</Message>
+				<Message messageTime={"11:32"} userSent={"Você"}>
+					bazinga
+				</Message>
+				<Message messageTime={"11:32"} userSent={"Você"}>
+					bazinga
 				</Message>
 			</div>
 		</div>
