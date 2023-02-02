@@ -2,7 +2,7 @@ import { PaperPlaneRight } from "phosphor-react";
 
 export default function SendMessage() {
 	return (
-		<div className="flex">
+		<div className="flex items-center sticky">
 			<div className="flex flex-1">
 				<input
 					type="text"

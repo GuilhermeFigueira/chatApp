@@ -13,7 +13,9 @@ export default function UserInfo() {
 				</div>
 				<div className="flex flex-col">
 					<h1 className="font-bold">Cecilia Sassaki</h1>
-					<h2 className="font-thin text-green-500">Online</h2>
+					<div className="font-thin flex items-center gap-1 text-sm text-green-500 before:content-[''] before:w-2 before:h-2 before:block before:bg-green-500 before:rounded">
+						Online
+					</div>
 				</div>
 			</div>
 			<div>

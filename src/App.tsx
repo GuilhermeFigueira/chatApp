@@ -2,7 +2,7 @@ import "./styles/main.css";
 
 import UserInfo from "./components/UserInfo";
 import SendMessage from "./components/SendMessage";
-import MessagesList from "./components/MessagesList";
+import MessagesList from "./components/Messages/MessagesList";
 
 function App() {
 	return (
