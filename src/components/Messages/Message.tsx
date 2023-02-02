@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-interface MessageProps {
+export interface MessageProps {
 	children?: ReactNode;
 	messageTime: string;
 	userSent: string;
@@ -17,15 +17,27 @@ export default function Message({
 	...props
 }: MessageProps) {
 	return (
-		<div className={receivedMessage ? "mr-auto " : "ml-auto"}>
+		<div
+			className={`max-w-[50vw] ${
+				receivedMessage ? "mr-auto " : "ml-auto "
+			}`}
+		>
 			<div
-				className={`text-gray-300 italic  ${
+				className={`text-gray-300 italic p-1 text-sm ${
 					receivedMessage ? "text-left" : "text-right"
 				} `}
 			>
 				{props.userSent} - {props.messageTime}
 			</div>
-			<div className="bg-zinc-700 rounded-b rounded-tr ">{children}</div>
+			<div
+				className={`w-fit text-gray-200 p-4 ${
+					receivedMessage
+						? "bg-amber-900 rounded-b-xl rounded-tr-xl"
+						: "bg-teal-900 rounded-b-xl rounded-tl-xl"
+				}`}
+			>
+				{children}
+			</div>
 		</div>
 	);
 }
